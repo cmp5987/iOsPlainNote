@@ -42,6 +42,7 @@
                     <navigationItem key="navigationItem" id="cWV-to-eED"/>
                     <connections>
                         <outlet property="table" destination="bdu-CE-AOJ" id="srA-vU-Wa4"/>
+                        <segue destination="JqL-B8-M64" kind="show" identifier="detail" id="aJ7-JT-vTp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,6 +66,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xl-19-LEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Note-->
+        <scene sceneID="hUg-A3-nCU">
+            <objects>
+                <viewController title="Note" id="JqL-B8-M64" customClass="DetailViewController" customModule="Plain_Notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zck-hH-dFw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hLU-mv-r5g">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hLU-mv-r5g" firstAttribute="bottom" secondItem="IP7-Ps-A6g" secondAttribute="bottom" id="B8x-RB-UjD"/>
+                            <constraint firstItem="hLU-mv-r5g" firstAttribute="top" secondItem="IP7-Ps-A6g" secondAttribute="top" id="hBp-qX-yHA"/>
+                            <constraint firstItem="hLU-mv-r5g" firstAttribute="leading" secondItem="IP7-Ps-A6g" secondAttribute="leading" id="j3b-hX-Kk1"/>
+                            <constraint firstItem="hLU-mv-r5g" firstAttribute="centerX" secondItem="zck-hH-dFw" secondAttribute="centerX" id="vBM-jn-CD5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IP7-Ps-A6g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p92-ye-1uc"/>
+                    <connections>
+                        <outlet property="textView" destination="hLU-mv-r5g" id="P8b-Zv-a1A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsx-fT-WVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794.4000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
